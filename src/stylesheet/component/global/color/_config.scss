@@ -1,0 +1,11 @@
+$body-text-color: #666;
+$body-background-color: #fff;
+
+$brand-colors: (
+  primary-color: #cd004a,
+  secondary-color: #2b3137,
+  tertiary-color: #f0890f,
+  ternary-color: #9f332f
+);
+
+$anchor-tag-color: map-get($brand-colors, primary-color);

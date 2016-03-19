@@ -1,0 +1,42 @@
+header#header{
+  color: #cd004a;
+  background: #fff;
+  .page-spacer{
+    padding-top: 20px;
+  }
+  .header-text{
+    h1{
+      font-size: $header-name;
+      font-weight: normal;
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+      color: $header-name-text-color;
+    }
+  }
+  .logo-container{
+    float: left;
+    margin-right: 10px;
+  }
+  .contact-details{
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    @media (min-width: 510px){
+      float: right;
+      text-align: right;
+      margin-top: 0;
+    }
+  }
+  .designation{
+    font-size: 10px;
+  }
+}
+
+.logo-header-container{
+  float: none;
+  @media (min-width: 500px){
+    float: left;
+    min-width: 300px;
+  }
+}

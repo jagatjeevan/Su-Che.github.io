@@ -1,0 +1,41 @@
+@keyframes heartbeat{
+  0%{
+    opacity: 1;
+    color: #cd004a;
+  }
+  30%{
+    opacity: 0.3;
+    color: #E26618;
+  }
+  50%{
+    opacity: 0.8;
+    color: #E26618;
+  }
+  80%{
+    opacity: 0.6;
+    color: #186FE2;
+  }
+  100%{
+    opacity: 0.9;
+    color: #E218D9;
+  }
+}
+
+.credits{
+  text-align: center;
+  padding: 10px;
+  background: #ededed;
+  .hearts-icon{
+    font-size: 25px;
+    color: #cd004a;
+    margin: 0 2px;
+    position: relative;
+    top: 4px;
+    animation-name: heartbeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  a{
+    text-decoration: none;
+  }
+}

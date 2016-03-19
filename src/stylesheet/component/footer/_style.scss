@@ -1,0 +1,46 @@
+#footer{
+  text-align: center;
+  background: $footer-background;
+  color: #fff;
+  @include selection($footer-background);
+  header{
+    font-size: 24px;
+    margin-bottom: 20px;
+    span{
+      position: relative;
+      padding-bottom: 10px;
+      &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        @include background-image(linear-gradient(to right, $footer-background, #A7A7A7, $footer-background));
+      }
+    }
+  }
+  .communication{
+    display: flex;
+    flex-wrap: wrap;
+    .connect-via{
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+      padding: $connect-via-spacer;
+      font-style: italic;
+      &:hover{
+        [class^="icon-"]{
+          -webkit-animation:spin 4s linear 3;
+             -moz-animation:spin 4s linear 3;
+                  animation:spin 4s linear 3;
+        }
+      }
+      [class^="icon-"]{
+        font-size: 25px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

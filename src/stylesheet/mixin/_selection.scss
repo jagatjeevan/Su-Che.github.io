@@ -1,0 +1,6 @@
+@mixin selection($section-background-color: #fff){
+  ::selection{
+    background: invert($section-background-color);
+    color: $section-background-color;
+  }
+}

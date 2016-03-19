@@ -1,0 +1,7 @@
+@mixin text-color($background-color: #fff){
+  @if(lightness($background-color) < 50%){
+    color: #ededed;
+  }@else{
+    color: #333;
+  }
+}

@@ -1,0 +1,47 @@
+$lighter-text-color: #ededed;
+
+
+$project-section-background: (
+  hello : #fafafa,
+  springer: #00244e,
+  vikalp: #fff,
+  jetairways: #00244e,
+  unicef: #fff,
+  healthcareathome: #4ab9e2
+);
+
+$project-section-background-image: (
+  hello : none,
+  springer: url(../img/section-background/adis-springerimac.png),
+  vikalp: url(../img/section-background/vikalp.png),
+  jetairways: url(../img/section-background/jet-airways.png),
+  unicef:  url(../img/section-background/unicef.png),
+  healthcareathome: url(../img/section-background/samsung-tab.png)
+);
+
+
+$project-section-heading-color: (
+  hello : $body-text-color,
+  springer: #f0890f,
+  vikalp: #9f332f,
+  jetairways: #f8af00,
+  healthcareathome: #fff
+);
+
+$project-section-text-color: (
+  hello : $body-text-color,
+  springer: $lighter-text-color,
+  vikalp: $body-text-color,
+  jetairways: $lighter-text-color,
+  unicef: $body-text-color,
+  healthcareathome: $lighter-text-color
+);
+
+$project-section-padding-top: (
+  hello : 0,
+  springer: 340px,
+  vikalp: 160px,
+  jetairways: 350px,
+  unicef: 310px,
+  healthcareathome: 570px
+);

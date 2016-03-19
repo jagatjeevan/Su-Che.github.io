@@ -1,0 +1,17 @@
+$spacers: (
+  "25" : 5px,
+  "50" : 10px,
+  "100": 20px,
+  "200": 30px,
+  "300": 60px,
+  "400": 80px
+);
+
+$mobile-page-spacing: map-get($spacers, "100");
+$ipad-page-spacing: map-get($spacers, "200");
+$desktop-page-spacing: map-get($spacers, "300");;
+
+
+// Desktop
+$project-background-space: 40%;
+$project-text-space: 40%;

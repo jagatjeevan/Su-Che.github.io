@@ -1,0 +1,38 @@
+.page-spacer{
+  padding: $mobile-page-spacing;
+  @media (min-width: 687px){
+    padding: $ipad-page-spacing;
+  }
+  @media (min-width: 960px){
+    padding: $desktop-page-spacing;
+    width: $project-text-space;
+  }
+  #hello &,
+  #footer &,
+  #healthcareathome-extention &{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+#hello .page-spacer.whoami{
+  width: 100%;
+  @media (min-width: 960px){
+    width: 60%;
+    text-align: justify;
+  }
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.center{
+  text-align: center;
+}

@@ -1,0 +1,490 @@
+@import url(fontello/css/animation.css);
+@import url(fontello/css/fontello.css);
+@import url(vendor/normalize.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700);
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5em;
+  background: #fff;
+}
+body ::selection {
+  background: black;
+  color: #fff;
+}
+
+.section-header {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #f0890f;
+}
+
+.hearts-icon {
+  font-size: 12px;
+}
+
+a {
+  color: #cd004a;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.page-spacer {
+  padding: 20px;
+}
+@media (min-width: 687px) {
+  .page-spacer {
+    padding: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .page-spacer {
+    padding: 60px;
+    width: 40%;
+  }
+}
+#hello .page-spacer, #footer .page-spacer, #healthcareathome-extention .page-spacer {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#hello .page-spacer.whoami {
+  width: 100%;
+}
+@media (min-width: 960px) {
+  #hello .page-spacer.whoami {
+    width: 60%;
+    text-align: justify;
+  }
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+header#header {
+  color: #cd004a;
+  background: #fff;
+}
+header#header .page-spacer {
+  padding-top: 20px;
+}
+header#header .header-text h1 {
+  font-size: 25px;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  color: #2b3137;
+}
+header#header .logo-container {
+  float: left;
+  margin-right: 10px;
+}
+header#header .contact-details {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+@media (min-width: 510px) {
+  header#header .contact-details {
+    float: right;
+    text-align: right;
+    margin-top: 0;
+  }
+}
+header#header .designation {
+  font-size: 10px;
+}
+
+.logo-header-container {
+  float: none;
+}
+@media (min-width: 500px) {
+  .logo-header-container {
+    float: left;
+    min-width: 300px;
+  }
+}
+
+#hello {
+  background-color: #fafafa;
+}
+#hello ::selection {
+  background: #050505;
+  color: #fafafa;
+}
+
+#springer {
+  background-color: #00244e;
+}
+#springer ::selection {
+  background: #ffdbb1;
+  color: #00244e;
+}
+
+#vikalp {
+  background-color: #fff;
+}
+#vikalp ::selection {
+  background: black;
+  color: #fff;
+}
+
+#jetairways {
+  background-color: #00244e;
+}
+#jetairways ::selection {
+  background: #ffdbb1;
+  color: #00244e;
+}
+
+#unicef {
+  background-color: #fff;
+}
+#unicef ::selection {
+  background: black;
+  color: #fff;
+}
+
+#healthcareathome {
+  background-color: #4ab9e2;
+}
+#healthcareathome ::selection {
+  background: #b5461d;
+  color: #4ab9e2;
+}
+
+#hello {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center 30px;
+}
+@media (min-width: 960px) {
+  #hello {
+    background-size: 40% auto;
+    background-position: center right;
+    padding-top: 0;
+  }
+}
+
+#springer {
+  background-image: url(../img/section-background/adis-springerimac.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center 30px;
+}
+@media (min-width: 960px) {
+  #springer {
+    background-size: 40% auto;
+    background-position: center right;
+    padding-top: 0;
+  }
+}
+
+#vikalp {
+  background-image: url(../img/section-background/vikalp.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center 30px;
+}
+@media (min-width: 960px) {
+  #vikalp {
+    background-size: 40% auto;
+    background-position: center right;
+    padding-top: 0;
+  }
+}
+
+#jetairways {
+  background-image: url(../img/section-background/jet-airways.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center 30px;
+}
+@media (min-width: 960px) {
+  #jetairways {
+    background-size: 40% auto;
+    background-position: center right;
+    padding-top: 0;
+  }
+}
+
+#unicef {
+  background-image: url(../img/section-background/unicef.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center 30px;
+}
+@media (min-width: 960px) {
+  #unicef {
+    background-size: 40% auto;
+    background-position: center right;
+    padding-top: 0;
+  }
+}
+
+#healthcareathome {
+  background-image: url(../img/section-background/samsung-tab.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center 30px;
+}
+@media (min-width: 960px) {
+  #healthcareathome {
+    background-size: 40% auto;
+    background-position: center right;
+    padding-top: 0;
+  }
+}
+
+#hello .project-description-section {
+  padding-top: 0;
+}
+@media (min-width: 960px) {
+  #hello .project-description-section {
+    padding-top: 0;
+  }
+}
+
+#springer .project-description-section {
+  padding-top: 340px;
+}
+@media (min-width: 960px) {
+  #springer .project-description-section {
+    padding-top: 0;
+  }
+}
+
+#vikalp .project-description-section {
+  padding-top: 160px;
+}
+@media (min-width: 960px) {
+  #vikalp .project-description-section {
+    padding-top: 0;
+  }
+}
+
+#jetairways .project-description-section {
+  padding-top: 350px;
+}
+@media (min-width: 960px) {
+  #jetairways .project-description-section {
+    padding-top: 0;
+  }
+}
+
+#unicef .project-description-section {
+  padding-top: 310px;
+}
+@media (min-width: 960px) {
+  #unicef .project-description-section {
+    padding-top: 0;
+  }
+}
+
+#healthcareathome .project-description-section {
+  padding-top: 570px;
+}
+@media (min-width: 960px) {
+  #healthcareathome .project-description-section {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  #healthcareathome {
+    background-size: auto 80%;
+  }
+}
+
+#hello {
+  color: #666;
+}
+#hello .section-header {
+  color: #666;
+  line-height: 1.3em;
+}
+
+#springer {
+  color: #ededed;
+}
+#springer .section-header {
+  color: #ededed;
+  line-height: 1.3em;
+}
+
+#vikalp {
+  color: #666;
+}
+#vikalp .section-header {
+  color: #666;
+  line-height: 1.3em;
+}
+
+#jetairways {
+  color: #ededed;
+}
+#jetairways .section-header {
+  color: #ededed;
+  line-height: 1.3em;
+}
+
+#unicef {
+  color: #666;
+}
+#unicef .section-header {
+  color: #666;
+  line-height: 1.3em;
+}
+
+#healthcareathome {
+  color: #ededed;
+}
+#healthcareathome .section-header {
+  color: #ededed;
+  line-height: 1.3em;
+}
+
+.project-section {
+  display: flex;
+  align-items: center;
+}
+.project-section#hello {
+  display: block;
+}
+
+#healthcareathome-extention {
+  text-align: center;
+}
+#healthcareathome-extention img {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 15px;
+}
+
+@keyframes heartbeat {
+  0% {
+    opacity: 1;
+    color: #cd004a;
+  }
+  30% {
+    opacity: 0.3;
+    color: #E26618;
+  }
+  50% {
+    opacity: 0.8;
+    color: #E26618;
+  }
+  80% {
+    opacity: 0.6;
+    color: #186FE2;
+  }
+  100% {
+    opacity: 0.9;
+    color: #E218D9;
+  }
+}
+.credits {
+  text-align: center;
+  padding: 10px;
+  background: #ededed;
+}
+.credits .hearts-icon {
+  font-size: 25px;
+  color: #cd004a;
+  margin: 0 2px;
+  position: relative;
+  top: 4px;
+  animation-name: heartbeat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.credits a {
+  text-decoration: none;
+}
+
+#footer {
+  text-align: center;
+  background: rgba(74, 73, 74, 0.9);
+  color: #fff;
+}
+#footer ::selection {
+  background: rgba(181, 182, 181, 0.9);
+  color: rgba(74, 73, 74, 0.9);
+}
+#footer header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#footer header span {
+  position: relative;
+  padding-bottom: 10px;
+}
+#footer header span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRhNDk0YSIgc3RvcC1vcGFjaXR5PSIwLjkiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2E3YTdhNyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRhNDk0YSIgc3RvcC1vcGFjaXR5PSIwLjkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(74, 73, 74, 0.9)), color-stop(50%, #a7a7a7), color-stop(100%, rgba(74, 73, 74, 0.9)));
+  background-image: -moz-linear-gradient(left, rgba(74, 73, 74, 0.9), #a7a7a7, rgba(74, 73, 74, 0.9));
+  background-image: -webkit-linear-gradient(left, rgba(74, 73, 74, 0.9), #a7a7a7, rgba(74, 73, 74, 0.9));
+  background-image: linear-gradient(to right, rgba(74, 73, 74, 0.9), #a7a7a7, rgba(74, 73, 74, 0.9));
+}
+#footer .communication {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .communication .connect-via {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 20px 0;
+  font-style: italic;
+}
+#footer .communication .connect-via:hover [class^="icon-"] {
+  -webkit-animation: spin 4s linear 3;
+  -moz-animation: spin 4s linear 3;
+  animation: spin 4s linear 3;
+}
+#footer .communication .connect-via [class^="icon-"] {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+@each $id, $background in $project-section-background{
+  ##{$id}{
+    background-color: $background;
+    @include selection($background);
+  }
+}
+
+@each $id, $background in $project-section-background-image{
+  ##{$id}{
+    background: {
+      image: $background;
+      repeat: no-repeat;
+      size: 80%;
+      position: center 30px;
+    }
+    @media (min-width: 960px){
+      background: {
+        size: $project-background-space auto;
+        position: center right;
+      }
+      padding-top: 0;
+    }
+  }
+}
+
+@each $id, $padding-top in $project-section-padding-top{
+  ##{$id}{
+    .project-description-section{
+      padding-top: $padding-top;
+      @media (min-width: 960px){
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+
+#healthcareathome{
+  @media (min-width: 960px){
+    background-size: auto 80%;
+  }
+}
+
+@each $id, $text-color in $project-section-text-color{
+  ##{$id}{
+    color: $text-color;
+    .section-header{
+      color: $text-color;
+      line-height: 1.3em;
+    }
+  }
+}
+
+.project-section{
+  display: flex;
+  align-items: center;
+  &#hello{
+    display: block;
+  }
+}
+#healthcareathome-extention{
+  text-align: center;
+  img{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }
+} 
+

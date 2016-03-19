@@ -1,0 +1,37 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Suganth Resume",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagatjeevan/resume.git"
+  },
+  "keywords": [
+    "Suganth",
+    "Resume"
+  ],
+  "author": "Jagat Jeevan Sahoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jagatjeevan/resume/issues"
+  },
+  "homepage": "https://github.com/jagatjeevan/resume#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-watch": "^4.3.5",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "normalize.css": "^3.0.3",
+    "requirejs": "^2.1.22"
+  }
+}

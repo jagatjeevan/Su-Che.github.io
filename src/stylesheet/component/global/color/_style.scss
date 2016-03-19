@@ -1,0 +1,34 @@
+a{
+  color: $anchor-tag-color;
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+// section
+
+
+// #springer,
+// #jetairways{
+//   background-color: #00244e;
+//   color: #fff;
+//   @include selection(#00244e);
+// }
+
+
+// .section-header{
+//   #hello &{
+//     color: $body-text-color;
+//   }
+//   #vikalp &{
+//     color: map-get($brand-colors, ternary-color);
+//   }
+//   #unicef &{
+//     color: #4ab9e2;
+//   }
+// }
