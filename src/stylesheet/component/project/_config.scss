@@ -7,7 +7,8 @@ $project-section-background: (
   vikalp: #fff,
   jetairways: #00244e,
   unicef: #fff,
-  healthcareathome: #4ab9e2
+  healthcareathome: #4ab9e2,
+  unilever: #62B804
 );
 
 $project-section-background-image: (
@@ -16,8 +17,53 @@ $project-section-background-image: (
   vikalp: url(../img/section-background/vikalp.png),
   jetairways: url(../img/section-background/jet-airways.png),
   unicef:  url(../img/section-background/unicef.png),
-  healthcareathome: url(../img/section-background/samsung-tab.png)
+  healthcareathome: url(../img/section-background/healthcare.png),
+  unilever: url(../img/section-background/Knorrilicious.png)
 );
+
+$project-section-background-image-position-mobile: (
+  hello : 0 0,
+  springer: top center,
+  vikalp: top center,
+  jetairways: top center,
+  unicef: top center,
+  healthcareathome: top center,
+  unilever: top center
+);
+
+$project-section-background-image-position-mobile-size: (
+  hello : 0,
+  springer: auto 400px,
+  vikalp: auto 250px,
+  jetairways: auto 400px,
+  unicef: auto 400px,
+  healthcareathome: auto 400px,
+  unilever: auto 400px
+);
+
+
+$project-section-background-image-position-ipad: ();
+
+$project-section-background-image-position-desktop: (
+  hello : 0 0,
+  springer: right bottom,
+  vikalp: right center,
+  jetairways: right bottom,
+  unicef: right center,
+  healthcareathome: right 10% center,
+  unilever: right 10% center
+  );
+
+$project-section-background-image-position-desktop-size: (
+  hello : 0,
+  springer: auto 80%,
+  vikalp: auto 80%,
+  jetairways: auto 75%,
+  unicef: auto 60%,
+  healthcareathome: auto 40%,
+  unilever: auto 90%
+);
+
 
 
 $project-section-heading-color: (
@@ -25,7 +71,8 @@ $project-section-heading-color: (
   springer: #f0890f,
   vikalp: #9f332f,
   jetairways: #f8af00,
-  healthcareathome: #fff
+  healthcareathome: #fff,
+  unilever: #fff
 );
 
 $project-section-text-color: (
@@ -34,7 +81,8 @@ $project-section-text-color: (
   vikalp: $body-text-color,
   jetairways: $lighter-text-color,
   unicef: $body-text-color,
-  healthcareathome: $lighter-text-color
+  healthcareathome: $lighter-text-color,
+  unilever: #fff
 );
 
 $project-section-padding-top: (

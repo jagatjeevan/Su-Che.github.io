@@ -10,8 +10,6 @@
     background: {
       image: $background;
       repeat: no-repeat;
-      size: 80%;
-      position: center 30px;
     }
     @media (min-width: 960px){
       background: {
@@ -22,6 +20,39 @@
     }
   }
 }
+
+@each $id, $background-position in $project-section-background-image-position-mobile{
+  ##{$id}{
+    background: {
+      position: $background-position;
+    }
+  }
+}
+
+@each $id, $background-position in $project-section-background-image-position-desktop{
+  ##{$id}{
+    background: {
+      position: $background-position;
+    }
+  }
+}
+
+@each $id, $background-size in $project-section-background-image-position-mobile-size{
+  ##{$id}{
+    background: {
+      size: $background-size; 
+    }
+  }
+}
+
+@each $id, $background-size in $project-section-background-image-position-desktop-size{
+  ##{$id}{
+    background: {
+      size: $background-size; 
+    }
+  }
+}
+
 
 @each $id, $padding-top in $project-section-padding-top{
   ##{$id}{

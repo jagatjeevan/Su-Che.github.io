@@ -184,11 +184,17 @@ header#header .designation {
   color: #4ab9e2;
 }
 
+#unilever {
+  background-color: #62B804;
+}
+#unilever ::selection {
+  background: #9d47fb;
+  color: #62B804;
+}
+
 #hello {
   background-image: none;
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center 30px;
 }
 @media (min-width: 960px) {
   #hello {
@@ -201,8 +207,6 @@ header#header .designation {
 #springer {
   background-image: url(../img/section-background/adis-springerimac.png);
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center 30px;
 }
 @media (min-width: 960px) {
   #springer {
@@ -215,8 +219,6 @@ header#header .designation {
 #vikalp {
   background-image: url(../img/section-background/vikalp.png);
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center 30px;
 }
 @media (min-width: 960px) {
   #vikalp {
@@ -229,8 +231,6 @@ header#header .designation {
 #jetairways {
   background-image: url(../img/section-background/jet-airways.png);
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center 30px;
 }
 @media (min-width: 960px) {
   #jetairways {
@@ -243,8 +243,6 @@ header#header .designation {
 #unicef {
   background-image: url(../img/section-background/unicef.png);
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center 30px;
 }
 @media (min-width: 960px) {
   #unicef {
@@ -255,10 +253,8 @@ header#header .designation {
 }
 
 #healthcareathome {
-  background-image: url(../img/section-background/samsung-tab.png);
+  background-image: url(../img/section-background/healthcare.png);
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center 30px;
 }
 @media (min-width: 960px) {
   #healthcareathome {
@@ -266,6 +262,130 @@ header#header .designation {
     background-position: center right;
     padding-top: 0;
   }
+}
+
+#unilever {
+  background-image: url(../img/section-background/Knorrilicious.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 960px) {
+  #unilever {
+    background-size: 40% auto;
+    background-position: center right;
+    padding-top: 0;
+  }
+}
+
+#hello {
+  background-position: 0 0;
+}
+
+#springer {
+  background-position: top center;
+}
+
+#vikalp {
+  background-position: top center;
+}
+
+#jetairways {
+  background-position: top center;
+}
+
+#unicef {
+  background-position: top center;
+}
+
+#healthcareathome {
+  background-position: top center;
+}
+
+#unilever {
+  background-position: top center;
+}
+
+#hello {
+  background-position: 0 0;
+}
+
+#springer {
+  background-position: right bottom;
+}
+
+#vikalp {
+  background-position: right center;
+}
+
+#jetairways {
+  background-position: right bottom;
+}
+
+#unicef {
+  background-position: right center;
+}
+
+#healthcareathome {
+  background-position: right 10% center;
+}
+
+#unilever {
+  background-position: right 10% center;
+}
+
+#hello {
+  background-size: 0;
+}
+
+#springer {
+  background-size: auto 400px;
+}
+
+#vikalp {
+  background-size: auto 250px;
+}
+
+#jetairways {
+  background-size: auto 400px;
+}
+
+#unicef {
+  background-size: auto 400px;
+}
+
+#healthcareathome {
+  background-size: auto 400px;
+}
+
+#unilever {
+  background-size: auto 400px;
+}
+
+#hello {
+  background-size: 0;
+}
+
+#springer {
+  background-size: auto 80%;
+}
+
+#vikalp {
+  background-size: auto 80%;
+}
+
+#jetairways {
+  background-size: auto 75%;
+}
+
+#unicef {
+  background-size: auto 60%;
+}
+
+#healthcareathome {
+  background-size: auto 40%;
+}
+
+#unilever {
+  background-size: auto 90%;
 }
 
 #hello .project-description-section {
@@ -373,6 +493,14 @@ header#header .designation {
 }
 #healthcareathome .section-header {
   color: #ededed;
+  line-height: 1.3em;
+}
+
+#unilever {
+  color: #fff;
+}
+#unilever .section-header {
+  color: #fff;
   line-height: 1.3em;
 }
 
