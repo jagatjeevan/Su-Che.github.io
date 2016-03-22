@@ -571,6 +571,9 @@ header#header .designation {
   background: rgba(181, 182, 181, 0.9);
   color: rgba(74, 73, 74, 0.9);
 }
+#footer .page-spacer {
+  padding: 140px 0;
+}
 #footer header {
   font-size: 24px;
   margin-bottom: 20px;
