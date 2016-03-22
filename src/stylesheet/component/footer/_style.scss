@@ -3,6 +3,9 @@
   background: $footer-background;
   color: #fff;
   @include selection($footer-background);
+  .page-spacer{
+    padding: 140px 0;
+  }
   header{
     font-size: 24px;
     margin-bottom: 20px;
