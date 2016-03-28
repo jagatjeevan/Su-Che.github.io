@@ -25,18 +25,18 @@ $project-section-background-image-position-mobile: (
   hello : 0 0,
   springer: top center,
   vikalp: top center,
-  jetairways: top center,
-  unicef: top center,
-  healthcareathome: top center,
-  unilever: top center
+  jetairways: top 20px center,
+  unicef: top 20px center,
+  healthcareathome: top 20px center,
+  unilever: top 20px center
 );
 
 $project-section-background-image-position-mobile-size: (
   hello : 0,
   springer: auto 400px,
   vikalp: auto 250px,
-  jetairways: auto 400px,
-  unicef: auto 400px,
+  jetairways: auto 300px,
+  unicef: auto 300px,
   healthcareathome: auto 400px,
   unilever: auto 400px
 );
@@ -89,7 +89,8 @@ $project-section-padding-top: (
   hello : 0,
   springer: 340px,
   vikalp: 160px,
-  jetairways: 350px,
+  jetairways: 250px,
   unicef: 310px,
-  healthcareathome: 570px
+  healthcareathome: 400px,
+  unilever: 400px
 );

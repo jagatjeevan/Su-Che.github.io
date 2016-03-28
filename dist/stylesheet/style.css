@@ -289,19 +289,19 @@ header#header .designation {
 }
 
 #jetairways {
-  background-position: top center;
+  background-position: top 20px center;
 }
 
 #unicef {
-  background-position: top center;
+  background-position: top 20px center;
 }
 
 #healthcareathome {
-  background-position: top center;
+  background-position: top 20px center;
 }
 
 #unilever {
-  background-position: top center;
+  background-position: top 20px center;
 }
 
 #hello {
@@ -345,11 +345,11 @@ header#header .designation {
 }
 
 #jetairways {
-  background-size: auto 400px;
+  background-size: auto 300px;
 }
 
 #unicef {
-  background-size: auto 400px;
+  background-size: auto 300px;
 }
 
 #healthcareathome {
@@ -388,6 +388,55 @@ header#header .designation {
   background-size: auto 90%;
 }
 
+@media (max-width: 687px) {
+  #hello {
+    background-size: 0;
+    background-position: top center;
+  }
+}
+
+@media (max-width: 687px) {
+  #springer {
+    background-size: auto 400px;
+    background-position: top center;
+  }
+}
+
+@media (max-width: 687px) {
+  #vikalp {
+    background-size: auto 250px;
+    background-position: top center;
+  }
+}
+
+@media (max-width: 687px) {
+  #jetairways {
+    background-size: auto 300px;
+    background-position: top center;
+  }
+}
+
+@media (max-width: 687px) {
+  #unicef {
+    background-size: auto 300px;
+    background-position: top center;
+  }
+}
+
+@media (max-width: 687px) {
+  #healthcareathome {
+    background-size: auto 400px;
+    background-position: top center;
+  }
+}
+
+@media (max-width: 687px) {
+  #unilever {
+    background-size: auto 400px;
+    background-position: top center;
+  }
+}
+
 #hello .project-description-section {
   padding-top: 0;
 }
@@ -416,7 +465,7 @@ header#header .designation {
 }
 
 #jetairways .project-description-section {
-  padding-top: 350px;
+  padding-top: 250px;
 }
 @media (min-width: 960px) {
   #jetairways .project-description-section {
@@ -434,10 +483,19 @@ header#header .designation {
 }
 
 #healthcareathome .project-description-section {
-  padding-top: 570px;
+  padding-top: 400px;
 }
 @media (min-width: 960px) {
   #healthcareathome .project-description-section {
+    padding-top: 0;
+  }
+}
+
+#unilever .project-description-section {
+  padding-top: 400px;
+}
+@media (min-width: 960px) {
+  #unilever .project-description-section {
     padding-top: 0;
   }
 }
@@ -521,6 +579,11 @@ header#header .designation {
   margin-bottom: 15px;
 }
 
+@media (max-width: 687px) {
+  p {
+    text-align: justify;
+  }
+}
 @keyframes heartbeat {
   0% {
     opacity: 1;
