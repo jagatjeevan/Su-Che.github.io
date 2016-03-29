@@ -1,25 +1,35 @@
 $lighter-text-color: #ededed;
 
-// $project-background: (id, background-color, background-image, background-position);
+// $project-background: (id, background-color, background-image, $heading-text-color, $body-text-color);
 $project-background:(
-  (hello, #fafafa, none, 0 0),
-  (springer, #00244e, url(../img/section-background/adis-mock.png), top center),
-  (vikalp, #fff, url(../img/section-background/vikalp.png), top center),
-  (jetairways, #00244e, url(../img/section-background/jet-airways.png), top center),
-  (unicef, #fff, url(../img/section-background/unicef.png), top center),
-  (healthcareathome, #4ab9e2, url(../img/section-background/healthcare.png), top center),
-  (unilever,#62B804, url(../img/section-background/Knorrilicious.png), top center)
+  (hello, #fafafa, none, $body-text-color, $body-text-color),
+  (springer, #00244e, url(../img/section-background/adis-mock.png), #f0890f, $lighter-text-color),
+  (vikalp, #fff, url(../img/section-background/vikalp.png), #9f332f, $body-text-color),
+  (jetairways, #00244e, url(../img/section-background/jet-airways.png), #f8af00, $lighter-text-color),
+  (unicef, #fff, url(../img/section-background/unicef.png), $body-text-color, $body-text-color),
+  (healthcareathome, #4ab9e2, url(../img/section-background/healthcare.png), #fff, $lighter-text-color),
+  (unilever,#62B804, url(../img/section-background/Knorrilicious.png), #fff,#fff)
 );
 
-
-// $project-section-text: (id, heading-color, body-text-color);
-
-$project-section-text:(
-  (hello, $body-text-color, $body-text-color),
-  (springer, #f0890f, $lighter-text-color),
-  (vikalp, #9f332f, $body-text-color),
-  (jetairways, #f8af00, $lighter-text-color),
-  (unicef, $body-text-color, $body-text-color),
-  (healthcareathome, #fff, $lighter-text-color),
-  (unilever,#fff,#fff)
+// $project-background-size:(id, mobile-size, ipad-size, desktop-size)
+$project-background-size:(
+  (hello, auto 400px, auto 400px, 60% auto),
+  (springer, auto 400px, auto 400px, 40% auto),
+  (vikalp, auto 400px, auto 400px, 50% auto),
+  (jetairways, auto 400px, auto 400px, 55% auto),
+  (unicef, auto 400px, auto 400px, 50% auto),
+  (healthcareathome, auto 400px, auto 400px, 20% auto),
+  (unilever, auto 400px, auto 400px, 30% auto)
 );
+
+// $project-background-position:(id, mobile-position, ipad-position, desktop-position)
+$project-background-position:(
+  (hello, 0 0,0 0 ,0 0),
+  (springer, top center, top center, bottom right),
+  (vikalp, top center, top center, center right 5%),
+  (jetairways, top center, top center, bottom right),
+  (unicef, top center, center right 20px, center right 20px),
+  (healthcareathome, top center, top center, center right 20%),
+  (unilever, top center, top center, center right 10%)
+);
+

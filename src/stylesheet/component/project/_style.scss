@@ -1,29 +1,62 @@
-@each $id, $background-color, $background-image, $background-position in $project-background{
+@each $id, $background-color, $background-image, $heading-text-color, $body-text-color in $project-background{
   ##{$id}{
     background: {
       color: $background-color;
       image: $background-image;
-      position: $background-position;
+      repeat: no-repeat;
     }
+    color: $body-text-color;
+    line-height: 1.3em;
     @include selection($background-color);
+    .section-header{
+      color: $heading-text-color;
+    }
+    p{
+      @media (max-width: 687px){
+        text-align: justify;
+      }
+    }
   }
 }
 
-@each $id, $heading-color, $body-text-color in $project-section-text{
-   ##{$id}
-    {
-     color: $body-text-color;
-     line-height: 1.3em;
-     .section-header{
-       color: $heading-color;
-     }
-     p{
-        @media (max-width: 687px){
-          text-align: justify;
-        }
-      }
-   }
- }
+ @each $id, $mobile-size, $ipad-size, $desktop-size in $project-background-size{
+  ##{$id}{
+    background-size: $mobile-size;
+    @media (min-width: 687px){
+      background-size: $ipad-size;
+    }
+    @media (min-width: 960px){
+      background-size: $desktop-size;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@each $id, $mobile-position, $ipad-position, $desktop-position in $project-background-position{
+  ##{$id}{
+    background-position: $mobile-position;
+    @media (min-width: 687px){
+      background-position: $ipad-position;
+    }
+    @media (min-width: 960px){
+      background-position: $desktop-position;
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 .project-section{
   display: flex;
