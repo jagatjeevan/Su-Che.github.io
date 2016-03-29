@@ -24,8 +24,8 @@
     }
   }
   .communication{
-    display: flex;
-    flex-wrap: wrap;
+    @include display-flex;
+    @include flex-wrap(wrap);
     .connect-via{
       flex: 1;
       min-width: 250px;
