@@ -1,96 +1,25 @@
 $lighter-text-color: #ededed;
 
-
-$project-section-background: (
-  hello : #fafafa,
-  springer: #00244e,
-  vikalp: #fff,
-  jetairways: #00244e,
-  unicef: #fff,
-  healthcareathome: #4ab9e2,
-  unilever: #62B804
-);
-
-$project-section-background-image: (
-  hello : none,
-  springer: url(../img/section-background/adis-mock.png),
-  vikalp: url(../img/section-background/vikalp.png),
-  jetairways: url(../img/section-background/jet-airways.png),
-  unicef:  url(../img/section-background/unicef.png),
-  healthcareathome: url(../img/section-background/healthcare.png),
-  unilever: url(../img/section-background/Knorrilicious.png)
-);
-
-$project-section-background-image-position-mobile: (
-  hello : 0 0,
-  springer: top center,
-  vikalp: top center,
-  jetairways: top 20px center,
-  unicef: top 20px center,
-  healthcareathome: top 20px center,
-  unilever: top 20px center
-);
-
-$project-section-background-image-position-mobile-size: (
-  hello : 0,
-  springer: auto 400px,
-  vikalp: auto 250px,
-  jetairways: auto 300px,
-  unicef: auto 300px,
-  healthcareathome: auto 400px,
-  unilever: auto 400px
+// $project-background: (id, background-color, background-image, background-position);
+$project-background:(
+  (hello, #fafafa, none, 0 0),
+  (springer, #00244e, url(../img/section-background/adis-mock.png), top center),
+  (vikalp, #fff, url(../img/section-background/vikalp.png), top center),
+  (jetairways, #00244e, url(../img/section-background/jet-airways.png), top center),
+  (unicef, #fff, url(../img/section-background/unicef.png), top center),
+  (healthcareathome, #4ab9e2, url(../img/section-background/healthcare.png), top center),
+  (unilever,#62B804, url(../img/section-background/Knorrilicious.png), top center)
 );
 
 
-$project-section-background-image-position-ipad: ();
+// $project-section-text: (id, heading-color, body-text-color);
 
-$project-section-background-image-position-desktop: (
-  hello : 0 0,
-  springer: right bottom,
-  vikalp: right center,
-  jetairways: right -15% bottom,
-  unicef: right center,
-  healthcareathome: right 10% center,
-  unilever: right 10% center
-  );
-
-$project-section-background-image-position-desktop-size: (
-  hello : 0,
-  springer: auto 80%,
-  vikalp: auto 80%,
-  jetairways: auto 75%,
-  unicef: auto 60%,
-  healthcareathome: auto 40%,
-  unilever: auto 90%
-);
-
-
-
-$project-section-heading-color: (
-  hello : $body-text-color,
-  springer: #f0890f,
-  vikalp: #9f332f,
-  jetairways: #f8af00,
-  healthcareathome: #fff,
-  unilever: #fff
-);
-
-$project-section-text-color: (
-  hello : $body-text-color,
-  springer: $lighter-text-color,
-  vikalp: $body-text-color,
-  jetairways: $lighter-text-color,
-  unicef: $body-text-color,
-  healthcareathome: $lighter-text-color,
-  unilever: #fff
-);
-
-$project-section-padding-top: (
-  hello : 0,
-  springer: 340px,
-  vikalp: 160px,
-  jetairways: 250px,
-  unicef: 310px,
-  healthcareathome: 400px,
-  unilever: 400px
+$project-section-text:(
+  (hello, $body-text-color, $body-text-color),
+  (springer, #f0890f, $lighter-text-color),
+  (vikalp, #9f332f, $body-text-color),
+  (jetairways, #f8af00, $lighter-text-color),
+  (unicef, $body-text-color, $body-text-color),
+  (healthcareathome, #fff, $lighter-text-color),
+  (unilever,#fff,#fff)
 );

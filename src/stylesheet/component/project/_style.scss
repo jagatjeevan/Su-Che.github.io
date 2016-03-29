@@ -1,101 +1,29 @@
-@each $id, $background in $project-section-background{
-  ##{$id}{
-    background-color: $background;
-    @include selection($background);
-  }
-}
-
-@each $id, $background in $project-section-background-image{
+@each $id, $background-color, $background-image, $background-position in $project-background{
   ##{$id}{
     background: {
-      image: $background;
-      repeat: no-repeat;
-    }
-    @media (min-width: 960px){
-      background: {
-        size: $project-background-space auto;
-        position: center right;
-      }
-      padding-top: 0;
-    }
-  }
-}
-
-@each $id, $background-position in $project-section-background-image-position-mobile{
-  ##{$id}{
-    background: {
+      color: $background-color;
+      image: $background-image;
       position: $background-position;
     }
+    @include selection($background-color);
   }
 }
 
-@each $id, $background-position in $project-section-background-image-position-desktop{
-  ##{$id}{
-    background: {
-      position: $background-position;
-    }
-  }
-}
-
-@each $id, $background-size in $project-section-background-image-position-mobile-size{
-  ##{$id}{
-    background: {
-      size: $background-size; 
-    }
-  }
-}
-
-@each $id, $background-size in $project-section-background-image-position-desktop-size{
-  ##{$id}{
-    background: {
-      size: $background-size; 
-    }
-  }
-}
-
-@each $id, $background-size in $project-section-background-image-position-mobile-size{
-  ##{$id}{
-    @media (max-width: 687px){
-    background: {
-      size: $background-size; 
-      position: top center;
-    }
-    }
-  }
-}
-
-
-
-
-
-
-@each $id, $padding-top in $project-section-padding-top{
-  ##{$id}{
-    .project-description-section{
-      padding-top: $padding-top;
-      @media (min-width: 960px){
-        padding-top: 0;
+@each $id, $heading-color, $body-text-color in $project-section-text{
+   ##{$id}
+    {
+     color: $body-text-color;
+     line-height: 1.3em;
+     .section-header{
+       color: $heading-color;
+     }
+     p{
+        @media (max-width: 687px){
+          text-align: justify;
+        }
       }
-    }
-  }
-}
-
-
-#healthcareathome{
-  @media (min-width: 960px){
-    background-size: auto 80%;
-  }
-}
-
-@each $id, $text-color in $project-section-text-color{
-  ##{$id}{
-    color: $text-color;
-    .section-header{
-      color: $text-color;
-      line-height: 1.3em;
-    }
-  }
-}
+   }
+ }
 
 .project-section{
   display: flex;
@@ -112,11 +40,3 @@
     margin-bottom: 15px;
   }
 } 
-
-
-@media (max-width: 687px){
-  p{
-      text-align: justify;
-    }
-}
-
