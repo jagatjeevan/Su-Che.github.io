@@ -14,22 +14,32 @@ $project-background:(
 // $project-background-size:(id, mobile-size, ipad-size, desktop-size)
 $project-background-size:(
   (hello, auto 400px, auto 400px, 60% auto),
-  (springer, auto 400px, auto 400px, 40% auto),
-  (vikalp, auto 400px, auto 400px, 50% auto),
-  (jetairways, auto 400px, auto 400px, 55% auto),
-  (unicef, auto 400px, auto 400px, 50% auto),
+  (springer, auto 400px, auto 550px, 40% auto),
+  (vikalp, auto 300px, auto 400px, 50% auto),
+  (jetairways, auto 250px, auto 500px, 55% auto),
+  (unicef, auto 250px, auto 400px, 50% auto),
   (healthcareathome, auto 400px, auto 400px, 20% auto),
-  (unilever, auto 400px, auto 400px, 30% auto)
+  (unilever, auto 450px, auto 600px, 30% auto)
 );
 
 // $project-background-position:(id, mobile-position, ipad-position, desktop-position)
 $project-background-position:(
   (hello, 0 0,0 0 ,0 0),
   (springer, top center, top center, bottom right),
-  (vikalp, top center, top center, center right 5%),
-  (jetairways, top center, top center, bottom right),
-  (unicef, top center, center right 20px, center right 20px),
-  (healthcareathome, top center, top center, center right 20%),
-  (unilever, top center, top center, center right 10%)
+  (vikalp, top center, top 20px center, center right 5%),
+  (jetairways, top 20px center, top center, bottom right),
+  (unicef, top 20px center, top 30px center, center right 20px),
+  (healthcareathome, top 20px center, top 40px center, center right 20%),
+  (unilever, top 10px center, top center, center right 10%)
 );
 
+// $project-mobile-view-text-spacing:(id, ipad-text-spacing, mobile-text-spacing)
+$project-mobile-view-text-spacing:(
+  (hello, 0, 0),
+  (springer, 400px, 400px),
+  (vikalp, 400px, 300px),
+  (jetairways, 400px, 300px),
+  (unicef, 400px, 300px),
+  (healthcareathome, 400px, 450px),
+  (unilever, 600px, 500px)
+);

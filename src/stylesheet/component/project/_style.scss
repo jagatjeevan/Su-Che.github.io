@@ -32,12 +32,6 @@
 }
 
 
-
-
-
-
-
-
 @each $id, $mobile-position, $ipad-position, $desktop-position in $project-background-position{
   ##{$id}{
     background-position: $mobile-position;
@@ -50,12 +44,18 @@
   }
 }
 
-
-
-
-
-
-
+@each $id, $ipad-text-spacing, $mobile-text-spacing in $project-mobile-view-text-spacing{
+  ##{$id}{
+    .page-spacer{
+      @media (max-width: 687px){
+        padding-top: $mobile-text-spacing;
+      }
+      @media (min-width: 688px) and (max-width: 959px){
+        padding-top: $ipad-text-spacing;
+      }
+    }
+  }
+}
 
 
 .project-section{
