@@ -24,10 +24,11 @@
     }
   }
   .communication{
+    
     @include display-flex;
     @include flex-wrap(wrap);
     .connect-via{
-      flex: 1;
+      flex: 1 0 auto;
       min-width: 250px;
       text-align: center;
       padding: $connect-via-spacer;

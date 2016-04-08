@@ -31,9 +31,10 @@ body ::selection {
 }
 
 .section-header {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 40px;
   color: #f0890f;
+  line-height: 1.1em;
 }
 
 .hearts-icon {
@@ -648,7 +649,7 @@ header#header .designation {
   flex-wrap: wrap;
 }
 #footer .communication .connect-via {
-  flex: 1;
+  flex: 1 0 auto;
   min-width: 250px;
   text-align: center;
   padding: 20px 0;
